@@ -26,7 +26,7 @@ def scanport():
     try:
         for p in range(1, 45000):
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            res = sock.connect_ex((targetIP, p))
+            res = sock.connect_ex((IP, p))
             if res == 0:
                 print("Offener Port: " + str(p))
                 p = tk.Label(window, text="Offener Port: " + str(p))
