@@ -1,0 +1,1 @@
+cp yourscript /usr/bin
