@@ -1,0 +1,31 @@
+#!/bin/python3.9
+
+import argparse
+import os
+from pytube import YouTube
+
+def download(url, o):
+    try:
+        yt = YouTube(url)
+        stream = yt.streams.get_highest_resolution()
+
+        print(f"Download {yt.title}...")
+        stream.download(o)
+        print("Downloaded!")
+    except Exception as e:
+        print(f"Error {e}")
+
+
+def main():
+    print("YT-DOWNLOADER")
+    parser = argparse.ArgumentParser(description='Donwloads yt videos')
+
+    parser.add_argument('url', type=str, help='yt video url')
+    parser.add_argument('--o', type=str, default=os.getcwd(), help='download path')
+
+    args = parser.parse_args()
+
+    download(args.url, args.o)
+
+if __name__ == "__main__":
+    main()
