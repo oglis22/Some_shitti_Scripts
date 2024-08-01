@@ -1,1 +1,1 @@
-Some shitti scripts that i need often
+Some shitti scripts that I often need
