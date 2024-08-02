@@ -2,7 +2,7 @@
 
 const { Client, GatewayIntentBits } = require('discord.js');                                                                                                               
                                                                                                                                                                                                                                                                                                       
-const TOKEN = 'MTIzODI2NjI4ODY4MjMwMzU1OQ.Gh_pGp.51G4I9mQ2uHUyZ7hDYO1d5mPBYdDzntDq1jBdU';                                                                                  
+const TOKEN = '';                                                                                  
                                                                                                                                                                                                                                                                                                              
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });                                                                                                        
                                                                                                                                                                                                                                                                                                            
